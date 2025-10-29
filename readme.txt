@@ -1,1 +1,0 @@
-SS ENGINEERING - Final package. Replace gallery images in assets/ if you want real photos. Contact form posts to Formspree endpoint.
