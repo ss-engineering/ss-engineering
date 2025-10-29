@@ -1,0 +1,115 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fa;
+  color: #0b1e39;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #0b1e39;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+.logo img {
+  height: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.logo h1 {
+  display: inline;
+  font-size: 1.3rem;
+  color: #fff;
+  vertical-align: middle;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav-list a:hover { color: #ff7b00; }
+.menu-toggle { display: none; cursor: pointer; color: #fff; font-size: 1.8rem; }
+
+.hero {
+  background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 140px 20px;
+}
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ff7b00;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  color: #bfc6cf;
+}
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.about p, .services ul, .contact form { font-size: 1.1rem; line-height: 1.6; }
+.services ul { padding-left: 20px; }
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+.gallery-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.gallery-container img:hover { transform: scale(1.05); }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input, form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+form button {
+  background-color: #ff7b00;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+form button:hover { background-color: #e56f00; }
+footer {
+  background-color: #0b1e39;
+  color: #bfc6cf;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: #0b1e39;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-list.active { display: flex; }
+}

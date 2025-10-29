@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="S S ENGINEERING - Fabrication, CNC machining, galvanisation, and custom paint solutions.">
+  <meta name="keywords" content="fabrication, cnc, engineering, galvanisation, zinc plating, painting">
+  <title>S S ENGINEERING</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/ssengineeringlogo.png" alt="Logo">
+        <a href="#home"><h1>S S ENGINEERING</h1></a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Pioneering Possibilities.</h2>
+      <p>Precision engineering, fabrication, and finishing — crafted with perfection.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>S S ENGINEERING is a full-service fabrication and mechanical solutions company based in Faridabad. 
+    We specialize in precision fabrication, CNC lathe machining, press work, galvanization, and zinc plating. 
+    Our expertise combines craftsmanship and modern technology to deliver reliable, high-quality engineering outcomes. 
+    With a focus on customization and durability, we proudly serve automotive, industrial, and custom fabrication clients.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Fabrication:</strong> Sheet metal, structures, and precision assemblies.</li>
+      <li><strong>Press Shop:</strong> Advanced mechanical press operations up to 150mm bolts.</li>
+      <li><strong>CNC Machining:</strong> High-precision lathe and milling for custom parts.</li>
+      <li><strong>Galvanisation & Zinc Plating:</strong> Long-lasting anti-corrosion finishes.</li>
+      <li><strong>Custom Paint Jobs:</strong> Durable industrial paint solutions with aesthetic appeal.</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <img src="assets/gallery1.jpg" alt="Engineering work 1">
+<img src="assets/gallery2.jpg" alt="Engineering work 2">
+<img src="assets/gallery3.jpg" alt="Engineering work 3">
+<img src="assets/gallery4.jpg" alt="Engineering work 4">
+<img src="assets/gallery5.jpg" alt="Engineering work 5">
+<img src="assets/gallery6.jpg" alt="Engineering work 6">
+<img src="assets/gallery7.jpg" alt="Engineering work 7">
+<img src="assets/gallery8.jpg" alt="Engineering work 8">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xyzbjkow" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 S S ENGINEERING. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+    mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
