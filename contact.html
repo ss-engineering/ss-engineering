@@ -1,45 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | S S ENGINEERING</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — S S ENGINEERING</title>
+  <meta name="description" content="Contact S S ENGINEERING — Email: ssengineering030@gmail.com | Phone: +91 92119 69111" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="navbar">
-    <img src="ssengineeringlogo.png" class="logo" alt="S S Engineering Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
+    <div class="nav-inner container">
+      <a class="brand" href="index.html"><img src="assets/ssengineeringlogo.png" class="logo" alt="logo"><span class="brand-text">S S ENGINEERING</span></a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="index.html#gallery" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link active cta">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="page-header fade-in">
-    <h1>Contact Us</h1>
-  </section>
+  <main>
+    <section class="page container reveal">
+      <h1>Contact Us</h1>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:ssengineering030@gmail.com">ssengineering030@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919211969111">+91 92119 69111</a></p>
+          <p><strong>Address:</strong><br/>E-39, Ground Floor, Nehru Ground, N.I.T., Faridabad, HR 121001</p>
+          <p><small>Business Hours: Mon–Sat 9:00–18:00</small></p>
+        </div>
 
-  <section class="contact-section fade-in">
-    <div class="contact-info">
-      <p><strong>Email:</strong> SSENGINEERING030@GMAIL.COM</p>
-      <p><strong>Phone:</strong> 9211969111</p>
-      <p><strong>Address:</strong> E-39, Ground Floor, Nehru Ground, N.I.T., Faridabad, HR 121001</p>
-    </div>
-
-    <form action="https://formspree.io/f/xyzbjkow" method="POST" class="contact-form slide-up">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <input type="text" name="phone" placeholder="Your Phone">
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+        <form class="contact-form" action="https://formspree.io/f/xyzbjkow" method="POST">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="_replyto" placeholder="Your email" required>
+          <input type="text" name="phone" placeholder="Phone / WhatsApp">
+          <input type="text" name="service" placeholder="Service required (e.g., Fabrication)">
+          <textarea name="message" placeholder="Project details, qty, timeline" required></textarea>
+          <input type="hidden" name="_subject" value="Website enquiry — S S ENGINEERING">
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+      <p class="small">Form handled by Formspree — messages will be delivered to ssengineering030@gmail.com</p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 S S ENGINEERING | Faridabad, Haryana</p>
+    <div class="container footer-inner">
+      <div><strong>S S ENGINEERING</strong></div>
+      <div class="small">© <span id="year4"></span> S S ENGINEERING</div>
+    </div>
   </footer>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
 </body>
 </html>

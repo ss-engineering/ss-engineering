@@ -1,34 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | S S ENGINEERING</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — S S ENGINEERING</title>
+  <meta name="description" content="About S S ENGINEERING — fabrication, CNC, galvanisation and paint finishes. Based in Faridabad, Haryana." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="navbar">
-    <img src="ssengineeringlogo.png" class="logo" alt="S S Engineering Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="nav-inner container">
+      <a class="brand" href="index.html">
+        <img src="assets/ssengineeringlogo.png" alt="logo" class="logo" />
+        <span class="brand-text">S S ENGINEERING</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="index.html#gallery" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link cta">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="page-header fade-in">
-    <h1>About Us</h1>
-  </section>
+  <main>
+    <section class="page container reveal">
+      <h1>About Us</h1>
+      <p>S S ENGINEERING is a Faridabad-based metalworking company focusing on fabrication, CNC turning, mechanical press operations, galvanisation and protective finishes. We combine modern equipment with experienced technicians to deliver components with consistent quality and finish.</p>
 
-  <section class="content fade-in">
-    <p>S S ENGINEERING is a Faridabad-based fabrication and mechanical solutions company. Since inception, we’ve combined innovation and craftsmanship to deliver world-class metal components and structures.</p>
-    <p>We serve industries with expertise in CNC turning, mechanical press work, galvanisation, and custom coating. Our commitment: *Pioneering Possibilities* through precision, performance, and partnership.</p>
-  </section>
+      <h3 class="mt-20">Our Values</h3>
+      <ul class="list">
+        <li>Precision & Quality</li>
+        <li>On-time Delivery</li>
+        <li>Customer Collaboration</li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 S S ENGINEERING | Faridabad, Haryana</p>
+    <div class="container footer-inner">
+      <div><strong>S S ENGINEERING</strong></div>
+      <div class="small">© <span id="year2"></span> S S ENGINEERING</div>
+    </div>
   </footer>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
 </body>
 </html>
