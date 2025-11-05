@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About — S S Engineering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn about S S Engineering — our journey of precision, innovation, and manufacturing excellence from Faridabad, Haryana.">
+  <meta property="og:title" content="About S S Engineering">
+  <meta property="og:description" content="Our Journey of Precision & Innovation — manufacturing excellence and quality you can trust.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+ :root{--navy:#0a1f44;--silver:#c0c0c0;--orange:#ff7b00;--muted:#6b7280;}
+  html{scroll-behavior:smooth;}
+  body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;margin:0;padding-top:76px;color:#0b1630;background:#fff;}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+  
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 460px; /* matched to brown context hero height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero .hero-overlay{
+  max-width: 1000px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  padding: 56px;
+  border-radius: 8px;
+  color: #fff;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(10,31,68,0.6), rgba(10,31,68,0.25));
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 360px; /* slightly smaller on mobile */
+    padding: 0;
+  }
+  .hero .hero-overlay{
+    padding: 28px;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    height: 360px; /* slightly smaller on mobile */
+  }
+}
+  .hero .hero-overlay{background:linear-gradient(rgba(10,31,68,0.6),rgba(10,31,68,0.25));padding:56px;border-radius:8px;color:#fff;}
+  .site-logo {height: 48px;width: auto;display: block;}
+  .logo-img{height:48px;width:48px;object-fit:contain;}
+  .logo-text{font-weight:700;color:#0a1f44;margin-left:8px;}
+  .nav-links a{margin-left:18px;color:#0a1f44;text-decoration:none;font-weight:600;}
+  .nav-links a.active{color:#ff7b00;}
+  .card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(11,37,69,0.04);}
+  .card img{width:100%;height:200px;object-fit:cover;display:block;}
+  .card h3{margin:12px 16px 6px;color:#0a1f44;font-size:18px;}
+  .card p{margin:0 16px 16px;color:#6b7280;font-size:14px;}
+  .quote-form input,.quote-form textarea{width:100%;padding:10px;border:1px solid #e6e6e6;border-radius:6px;}
+  .btn-primary{background:#0a1f44;color:#fff;padding:10px 14px;border-radius:8px;font-weight:700;border:none;cursor:pointer;}
+  .btn-primary:hover{background:#ff7b00;}
+  #backToTop{position:fixed;right:24px;bottom:24px;width:48px;height:48px;border-radius:9999px;background:#0a1f44;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(2,6,23,0.2);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;z-index:60;border:none;}
+  #backToTop.show{opacity:1;visibility:visible;}
+  #backToTop:hover{background:#ff7b00;transform:translateY(-3px);}
+  .fade-in{opacity:0;transform:translateY(10px);transition:opacity .7s ease, transform .7s ease;}
+  .fade-in.visible{opacity:1;transform:translateY(0);}
+  @media (max-width:900px){.hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 460px; /* matched to brown context hero height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 360px; /* slightly smaller on mobile */
+  }
+}.card img{height:160px}}
+  .hero-accent::after{content:"";position:absolute;right:8%;top:10%;width:480px;height:240px;background:linear-gradient(120deg, rgba(255,123,0,0.18), rgba(255,180,100,0.06));filter:blur(30px);pointer-events:none;border-radius:18px;mix-blend-mode:overlay;}
+  </style>
+</head>
+<body>
+
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <div class="container flex items-center justify-between" style="height:76px;">
+      <a href="aboutpage.html" class="flex items-center logo-link" style="text-decoration:none;">
+        <img src="photo/ssengineeringlogo.webp" alt="SS Engineering Logo" class="site-logo" />
+        <span class="logo-text">S S Engineering</span>
+      </a>
+
+      <nav class="hidden md:flex items-center nav-links">
+        <a href="index.html" class="text-sm">Home</a>
+        <a href="aboutpage.html" class="text-sm ml-6 active">About</a>
+        <a href="productpage.html" class="text-sm ml-6">Product</a>
+        <a href="index.html#contact" class="text-sm ml-6 active">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobileBurger" aria-label="Open menu" class="p-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#0a1f44" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-3">
+        <a href="index.html" class="block py-2">Home</a>
+        <a href="aboutpage.html" class="block py-2 active">About</a>
+        <a href="productpage.html" class="block py-2">Product</a>
+        <a href="index.html#contact" class="block py-2 active">Contact</a>
+      </div>
+    </div>
+  </header>
+
+   <!-- HERO (layout preserved) -->
+  <main id="about">
+    <section class="hero hero-accent" style="background-image: url('photo/welding hero bg.webp');">
+      <div class="container hero-overlay fade-in">
+        <h1 class="text-3xl md:text-4xl font-extrabold">Our Journey of Precision & Innovation</h1>
+        <p class="mt-3 text-base md:text-lg">Driven by craftsmanship, technology, and trust — we continue to engineer excellence every day..</p>
+        <div class="mt-6">
+         <a href="index.html#contact" class="btn-primary mr-3">Get a Quote</a>
+          <a href="aboutpage.html#aboutus" class="underline text-sm" style="color:#fff; opacity:0.9;">Learn more about us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus" class="container mt-12 fade-in">
+      <h2 class="text-2xl font-bold text-gray-900">Who We Are</h2>
+      <p class="mt-3 text-gray-700">Founded with a vision to redefine industrial manufacturing, <strong>S S Engineering</strong> has evolved into one of Faridabad’s leading precision engineering firms. Our operations span multiple disciplines — sheet metal fabrication, machining, fasteners, and specialized assemblies — all underpinned by quality and consistency.</p>
+      <p class="mt-3 text-gray-700">Over the years, we have built a reputation for delivering complex engineering projects with speed and precision, while adhering to global standards. Our factory is equipped with modern CNC, forming, and fabrication systems, ensuring that every product leaving our floor meets customer expectations in both performance and finish.</p>
+    </section>
+
+    <section class="container mt-12 fade-in">
+      <h2 class="text-2xl font-bold text-gray-900">Our Mission, Vision & Values</h2>
+      <ul class="list-disc list-inside mt-3 text-gray-700 space-y-2">
+        <li><strong>Mission:</strong> To deliver world-class precision engineering solutions that enhance our customers’ capabilities and product reliability.</li>
+        <li><strong>Vision:</strong> To be recognized globally as a trusted and innovative engineering partner.</li>
+        <li><strong>Values:</strong> Integrity, Precision, Innovation, and Commitment to Customer Success.</li>
+      </ul>
+    </section>
+
+    <section class="container mt-12 fade-in">
+      <h2 class="text-2xl font-bold text-gray-900">Manufacturing Excellence</h2>
+      <p class="mt-3 text-gray-700">Our facilities are optimized for flexibility and quality. We constantly invest in process automation, tool development, and employee training. Our team works closely with customers to translate technical drawings into production-ready solutions that are cost-effective and robust.</p>
+      <p class="mt-3 text-gray-700">From prototype batches to mass production, every part undergoes rigorous inspection to ensure dimensional accuracy and material integrity. Our on-site quality labs are equipped with advanced gauges, hardness testers, and surface finish analyzers.</p>
+    </section>
+
+    <section class="container mt-12 fade-in">
+      <h2 class="text-2xl font-bold text-gray-900">Sustainability & Continuous Improvement</h2>
+      <p class="mt-3 text-gray-700">S S Engineering believes in sustainable manufacturing practices. We actively work on reducing waste, optimizing energy use, and improving efficiency across our operations. Our continuous improvement initiatives ensure we stay ahead of industry demands while minimizing environmental impact.</p>
+    </section>
+
+
+    <footer class="mt-12 bg-gray-50 py-6">
+      <div class="container text-center text-gray-600">
+        <div>
+          <strong>S S Engineering</strong><br />
+          • E-39, NEHRU GROUND, N.I.T., FARIDABAD, HR 121001<br />
+          • Email: ssengineering030@gmail.com
+        </div>
+        <div class="mt-4">2025 | S S ENGINEERING | ALL RIGHTS RESERVED |</div>
+      </div>
+    </footer>
+  </main>
+
+  <button id="backToTop" aria-label="Back to top" title="Back to Top" type="button">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 8l6 6H6z" fill="#fff"/></svg>
+  </button>
+
+  <script>
+  (function(){
+    var observer = new IntersectionObserver(function(entries){ entries.forEach(function(entry){ if(entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(function(el){ observer.observe(el); });
+    var b = document.getElementById('backToTop');
+    window.addEventListener('scroll', function(){ if(window.scrollY>300) b.classList.add('show'); else b.classList.remove('show'); });
+    b.addEventListener('click', function(){ window.scrollTo({ top:0, behavior:'smooth' }); });
+    var logoLink = document.querySelector('.logo-link');
+    if(logoLink){ logoLink.addEventListener('click', function(e){ window.location.href='index.html'; }); }
+    var burger = document.getElementById('mobileBurger');
+    var mobileNav = document.getElementById('mobileNav');
+    if(burger && mobileNav){ burger.addEventListener('click', function(){ mobileNav.classList.toggle('hidden'); }); }
+  })(); 
+  </script>
+</body>
+</html>
